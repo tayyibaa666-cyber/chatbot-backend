@@ -47,7 +47,6 @@ langchain-classic==1.0.1
 langchain-community==0.4.1
 langchain-core==1.2.7
 langchain-openai==1.1.6
-langchain-pinecone==0.2.13
 langchain-text-splitters==1.1.0
 langgraph==1.0.6
 langgraph-checkpoint==4.0.0
@@ -129,3 +128,4 @@ xxhash==3.6.0
 yarl==1.22.0
 zipp==3.23.0
 zstandard==0.25.0
+
