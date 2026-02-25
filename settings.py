@@ -39,9 +39,8 @@ ALLOWED_HOSTS = ['*']  # temporarily allow all hosts, we can restrict later
 #     "https://*.ngrok.io",
 # ]
 CSRF_TRUSTED_ORIGINS = [
-    os.environ.get('RAILWAY_STATIC_URL', 'http://localhost:8000'),
+    "https://frontend-chatbot-woad.vercel.app",
 ]
-
 # ============================================================================
 # Application definition
 # ============================================================================
@@ -88,10 +87,9 @@ MIDDLEWARE = [
 
 # Allow Streamlit to access the API
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8501",       # Streamlit local
-    "http://127.0.0.1:8501",       # Streamlit local
-    "http://localhost:3000",       # React frontend (if using)
-    "http://127.0.0.1:3000",       # React frontend (if using)
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://frontend-chatbot-woad.vercel.app",
 ]
 
 # Or allow all origins (for development only!)
