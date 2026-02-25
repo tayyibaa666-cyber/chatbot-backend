@@ -93,7 +93,14 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 # Or allow all origins (for development only!)
-# CORS_ALLOW_ALL_ORIGINS = True
+ CORS_ALLOWED_ORIGINS = [
+    "https://frontend-chatbot-woad.vercel.app",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
+
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = False
 
 
 # ============================================================================
