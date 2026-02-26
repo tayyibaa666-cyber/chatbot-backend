@@ -89,11 +89,11 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = False
 # ADD THIS PART:
 CORS_ALLOWED_ORIGINS = [
-    "https://frontend-chatbot-woad.vercel.app/",
+    "https://frontend-chatbot-woad.vercel.app",
     "http://localhost:3000",
 ]
 CSRF_TRUSTED_ORIGINS = [
-    "https://frontend-chatbot-woad.vercel.app/",
+    "https://frontend-chatbot-woad.vercel.app",
 ]
 
 # Optional but recommended for Railway/Vercel deployments:
