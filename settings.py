@@ -74,12 +74,10 @@ CORS_ALLOWED_ORIGINS = [
     "https://frontend-chatbot-woad.vercel.app",
     "http://localhost:3000",
 ]
-
-CSRF_TRUSTED_ORIGINS = [
-    "https://frontend-chatbot-woad.vercel.app",
-    "https://chatbot-backend-production-362d.up.railway.app",
-    "http://localhost:3000",
-]
+CSRF_TRUSTED_ORIGINS = os.environ.get(
+    'DJANGO_CSRF_TRUSTED_ORIGINS',
+    'https://frontend-chatbot-woad.vercel.app'
+).split(',')
 
 CORS_ALLOW_HEADERS = [
     "accept",
