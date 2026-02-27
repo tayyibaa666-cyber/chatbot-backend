@@ -76,8 +76,11 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
+    CSRF_TRUSTED_ORIGINS = [
     "https://frontend-chatbot-woad.vercel.app",
+    "https://chatbot-backend-production-362d.up.railway.app",  # add this
     "http://localhost:3000",
+]
 ]
 
 CORS_ALLOW_HEADERS = [
