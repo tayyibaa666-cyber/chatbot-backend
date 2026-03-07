@@ -38,8 +38,13 @@ ALLOWED_HOSTS = ['*']  # temporarily allow all hosts, we can restrict later
 #     "https://*.ngrok.app",
 #     "https://*.ngrok.io",
 # ]
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
+    r"^http://localhost:3000$",
+]
 CSRF_TRUSTED_ORIGINS = [
     "https://frontend-chatbot-woad.vercel.app",
+    "https://frontend-chatbot-r29pxqz2g-tayyibaa666-9994s-projects.vercel.app",
 ]
 # ============================================================================
 # Application definition
